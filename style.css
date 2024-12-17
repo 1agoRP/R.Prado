@@ -313,6 +313,81 @@ section.portifolio2 .flex {
     background-size: cover;
     transform: rotateY(180deg);
 }
+
+/* ESTILO DA SECTION MOTIVOS DIGITALIZAÇÃO */
+section.motivos-digitalizacao {
+    padding: 80px 7%;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 40px 10px rgba(0, 0, 0, 0.1);
+}
+section.motivos-digitalizacao .interface {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+section.motivos-digitalizacao h2.titulo {
+    font-size: 36px;
+    color: #000000;
+    text-align: center;
+    margin-bottom: 50px;
+}
+section.motivos-digitalizacao h2.titulo span {
+    color: #6CB849;
+    font-size: 36px;
+}
+section.motivos-digitalizacao .flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+}
+.motivos-digitalizacao .motivo-box {
+    flex: 1 1 calc(33.33% - 40px);
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.motivos-digitalizacao .motivo-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+.motivos-digitalizacao .motivo-box i {
+    font-size: 50px;
+    color: #6CB849;
+    margin-bottom: 15px;
+}
+.motivos-digitalizacao .motivo-box h3 {
+    font-size: 24px;
+    color: #000000;
+    margin: 15px 0;
+}
+.motivos-digitalizacao .motivo-box p {
+    font-size: 16px;
+    color: #666666;
+    text-align: justify;
+    line-height: 1.6;
+}
+
+/* RESPONSIVIDADE */
+@media screen and (max-width: 768px) {
+    section.motivos-digitalizacao .flex {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .motivos-digitalizacao .motivo-box {
+        flex: 1 1 100%;
+    }
+    section.motivos-digitalizacao h2.titulo {
+        font-size: 28px;
+    }
+    section.motivos-digitalizacao h2.titulo span {
+        font-size: 28px;
+    }
+}
+
+
 /* ESTILO FORMULÁRIO */
 section.formulario {
     padding: 80PX 4%;
