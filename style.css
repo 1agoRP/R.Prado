@@ -45,6 +45,7 @@ form .btn-enviar input:hover {
 /* Estilo do Cabeçalho */
 header {
     padding: 10px 4%;
+    position: fixed;
 }
 header .interface {
     display: flex;
