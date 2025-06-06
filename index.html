@@ -4,243 +4,638 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="R. Prado Soluções Administrativas - Especialistas em transcrição profissional de documentos, atualização de convenções e digitalização de arquivos para empresas e Condomínios.">
+    <meta name="keywords" content="transcrição de documentos, atualização de convenções, digitalização de arquivos, documentos administrativos, R. Prado">
+    <meta name="author" content="R. Prado Soluções Administrativas">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Preload de fontes e recursos críticos -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" as="style">
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" as="style">
+    
     <!-- GOOGLE FONTS -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <!-- FIM GOOGLE FONTS -->
+    
     <!-- INICIO BOOTSTRAP ICONS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <!-- FIM BOOTSTRAP ICONS -->
-    <link rel="stylesheet" href="style.css">
-    <title>R. Prado - Sol. Adm.</title>
+    
+    <title>R. Prado - Soluções Administrativas | Transcrição e Digitalização de Documentos</title>
     <link rel="icon" href="images/Logo_R._Prado.png" type="image/x-icon">
-    <script src="menu.js" defer></script>
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.rpradosolucoes.com.br/">
+    <meta property="og:title" content="R. Prado - Soluções Administrativas">
+    <meta property="og:description" content="Especialistas em transcrição profissional de documentos, atualização de convenções e digitalização de arquivos.">
+    <meta property="og:image" content="images/Logo_R._Prado.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.rpradosolucoes.com.br/">
+    <meta property="twitter:title" content="R. Prado - Soluções Administrativas">
+    <meta property="twitter:description" content="Especialistas em transcrição profissional de documentos, atualização de convenções e digitalização de arquivos.">
+    <meta property="twitter:image" content="images/Logo_R._Prado.png">
+    
+    <!-- Schema.org markup para empresa local -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "R. Prado Soluções Administrativas",
+      "image": "images/Logo_R._Prado.png",
+      "url": "https://www.rpradosolucoes.com.br",
+      "telephone": "+5511930050306",
+      "email": "rpradosolucoesadm@gmail.com",
+      "description": "Especialistas em transcrição profissional de documentos, atualização de convenções e digitalização de arquivos.",
+      "sameAs": [
+        "https://www.instagram.com/rpradosolucoes/",
+        "https://www.linkedin.com/in/iago-rocha-prado-ba108b343/"
+      ]
+    }
+    </script>
 </head>
+
 <body>
+    <!-- Skip link para acessibilidade -->
+    
     <header id="header">
         <div class="interface">
-            <div class="logo">
-                <a href="https://www.rprado.eco.br/">
-                    <img src="images/Logo.png" alt="Logo da R. Prado" width="150">
-                </a><!--link home-->
-            </div><!--logo-->
-            <nav class="menu-desktop">
-                <ul>
-                    <li><a href="https://www.rprado.eco.br/">Início</a></li>
-                    <li><a href="#especialidades">Especialidades</a></li>
-                    <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="#portifolio">Referências</a></li>
-                </ul>
-            </nav><!--navegação-->
-            <div class="btn-contato"><!--botão contato-->
-                <a href="#formulario">
-                    <button>Contato</button>
+            <div class="logo" aria-label="Logo da empresa">
+                <a href="#" aria-label="Página inicial">
+                    <img src="images/Logo.png" alt="Logo da R. Prado" width="50" height="auto">
                 </a>
             </div>
-            <div class="btn-abrir-menu" id="btn-menu">
+            
+            <nav class="menu-desktop" aria-label="Menu de navegação principal">
+                <ul>
+                    <li><a href="#" aria-current="page">Início</a></li>
+                    <li><a href="#especialidades">Serviços</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#portifolio">Referências</a></li>
+                    <li><a href="#depoimentos">Depoimentos</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                </ul>
+            </nav>
+            
+            <div class="btn-contato">
+                <a href="#formulario">
+                    <button aria-label="Entrar em contato">Contato</button>
+                </a>
+            </div>
+            
+            <button class="btn-abrir-menu" id="btn-menu" aria-expanded="false" aria-controls="menu-mobile" aria-label="Abrir menu">
                 <i class="bi bi-list"></i>
-            </div><!--btn-abrir-menu-->
-            <div class="menu-mobile" id="menu-mobile">
-                <div class="btn-fechar">
+            </button>
+            
+            <div class="menu-mobile" id="menu-mobile" aria-hidden="true">
+                <button class="btn-fechar" aria-label="Fechar menu">
                     <i class="bi bi-x"></i>
-                </div><!--btn-fechar-->
-                <nav>
+                </button>
+                <nav aria-label="Menu de navegação mobile">
                     <ul>
-                        <li><a href="https://www.rprado.eco.br/">Início</a></li>
-                        <li><a href="#especialidades">Especialidades</a></li>
+                        <li><a href="#">Início</a></li>
+                        <li><a href="#especialidades">Serviços</a></li>
                         <li><a href="#sobre">Sobre</a></li>
                         <li><a href="#portifolio">Referências</a></li>
+                        <li><a href="#depoimentos">Depoimentos</a></li>
+                        <li><a href="#faq">FAQ</a></li>
                         <li><a href="#formulario">Contato</a></li>
                     </ul>
-                </nav><!--navegação-->
-            </div><!--menu-mobile-->
-            <div class="overlay-menu" id="overlay-menu">
-            </div><!--overlay-menu-->
-        </div><!--interface-->
+                </nav>
+            </div>
+            
+            <div class="overlay-menu" id="overlay-menu"></div>
+        </div>
     </header>
-    <main>
+    
+    <main id="main-content">
         <section class="topo-site" id="topo-site">
             <div class="interface">
                 <div class="flex">
-                    <div class="txt-topo-site">
-                        <h1>MENOS PAPEL, MAIS PRODUTIVIDADE: DIGITALIZE SEUS DOCUMENTOS, MODERNIZE SEUS PROCESSOS E
-                            CUIDE DO FUTURO DO NOSSO PLANETA<span>.</span></h1>
-                        <p>Que tal dar um passo rumo à modernidade e à sustentabilidade? Nós ajudamos você a digitalizar
-                            arquivos e transcrever documentos, tornando o acesso às informações mais rápido e
-                            organizado. Além de otimizar seus processos e reduzir o acúmulo de papéis, você ainda
-                            contribui para um futuro mais sustentável, com menos desperdício e mais eficiência. Seja
-                            para empresas ou para uso pessoal, oferecemos soluções práticas e seguras que simplificam o
-                            dia a dia e ajudam você a focar no que realmente importa. Vamos nessa?</p>
-                        <div class="btn-contato"><!--botão contato-->
+                    <div class="txt-topo-site fade-in">
+                        <h1>
+                            <span class="destaque">TRANSCRIÇÃO PROFISSIONAL</span> DE DOCUMENTOS E ATUALIZAÇÃO DE CONVENÇÕES CONDOMINIAIS
+                        </h1>
+                        <p>Somos especialistas na transcrição de documentos e na atualização de Convenções Condominiais, Regulamentos Internos e demais documentos. Nosso serviço transforma arquivos físicos ou digitais em documentos editáveis, organizados e prontos para uso, preservando fielmente as informações e garantindo acesso rápido, seguro e eficiente.</p>
+                        <p>Atendemos condomínios, administradoras e empresas que buscam clareza, organização e conformidade legal em seus documentos. Oferecemos soluções sob medida para manter seus registros sempre atualizados, padronizados e alinhados.</p>
+                        <div class="btn-contato">
                             <a href="#formulario">
-                                <button>Entre em contato</button>
+                                <button aria-label="Solicitar orçamento">Solicitar orçamento</button>
                             </a>
-                        </div><!-- botão contato -->
-                    </div><!-- txt-topo-site -->
-                    <div class="img-topo-site">
-                        <img src="images/rb_845.png" alt="imagem do meio do site, reciclagem" width="300">
-                    </div><!-- img-topo-site -->
-                </div><!-- interface -->
-        </section><!-- Fim topo site -->
-        <section class="especialidades" id="especialidades">
-            <div class="interface">
-                <h2 class="titulo">NOSSAS <span>ESPECIALIDADES.</span></h2>
-                <div class="flex">
-                    <div class="especialidades-box">
-                        <i class="bi bi-journal-text"></i>
-                        <i class="bi bi-arrow-right-circle-fill"></i>
-                        <i class="bi bi-filetype-docx"></i>
-                        <h3>Transcrição de Documentos</h3>
-                        <p>É o processo de converter informações contidas em documentos físicos ou digitais em texto
-                            editável e acessível, garantindo precisão e organização. Esse serviço é ideal para
-                            transformar manuscritos, documentos escaneados, áudios ou vídeos em arquivos digitais
-                            estruturados. Com a transcrição, você otimiza o acesso, realiza buscas rápidas e preserva
-                            dados valiosos, reduzindo riscos. É uma solução prática para empresas, profissionais
-                            autônomos ou qualquer pessoa que busca modernizar seu acervo.
-                        </p>
-                        <p>Exemplos: Convenções, Regulamentos Internos, Especificações, Manuais, entre outros.</p>
-                        
-                    </div><!-- Fim especialidades-box -->
-                    <div class="especialidades-box">
-                        <i class="bi bi-journal-text"></i>
-                        <span><i class="bi bi-arrow-right-circle-fill"></i></span>
-                        <i class="bi bi-filetype-pdf"></i>
-                        <h3>Digitalização de Arquivos</h3>
-                        <p>É o processo de transformar documentos físicos, como papéis, fotos ou plantas técnicas, em
-                            arquivos digitais. Com scanners de alta qualidade, capturamos informações e as convertemos
-                            em formatos eletrônicos, como PDF, JPEG ou TIFF. Esse serviço facilita o armazenamento, a
-                            organização e o acesso rápido aos documentos, eliminando a necessidade de espaço físico. A
-                            digitalização protege contra perdas e promove sustentabilidade, com menos desperdício e mais
-                            eficiência.</p>
-                    </div><!-- Fim especialidades-box -->
-                    <div class="especialidades-box">
-                        <i class="bi bi-book"></i>
-                        <h3>Digitalização de Livros de ATA</h3>
-                        <p>A digitalização de livros de ata converte registros físicos em arquivos digitais de alta qualidade, assegurando a preservação de informações históricas e a integridade dos documentos. Esse processo facilita a organização e a busca por informações específicas, eliminando riscos de deterioração, extravio ou danos aos originais. Além disso, permite o armazenamento seguro e otimiza o acesso remoto, sendo uma solução prática para modernizar arquivos e garantir a longevidade dos registros.</p>
-                    </div><!--Fim especialidades-box-->
-                </div><!-- Fim Flex -->
-            </div> <!-- Fim interface -->
-        </section><!-- Fim section -->
-        <section class="sobre" id="sobre">
-            <div class="interface">
-                <div class="flex">
-                    <div class="txt-sobre">
-                        <h2 class="sobre-mim">MUITO PRAZER,<span>SOMOS A R. PRADO.</span></h2>
-                        <p>Somos uma empresa fundada com o propósito de transformar a maneira como pessoas e organizações lidam com seus documentos. Nossa paixão por organização e eficiência nos levou a criar soluções inovadoras de digitalização e transcrição, ajudando nossos clientes a eliminar arquivos físicos desorganizados e a migrar para o ambiente digital de forma prática, segura e sustentável</p>
-                        <p>Unimos tecnologia de ponta a um atendimento personalizado para oferecer uma experiência fluida e eficaz, adaptada às necessidades específicas de cada cliente.</p>
-                        <p>Nosso compromisso vai além de entregar resultados rápidos. Acreditamos no impacto positivo que a digitalização e a otimização de processos podem gerar, permitindo que nossos clientes tenham mais tempo e liberdade para focar no que realmente importa. Cada documento digitalizado e cada transcrição feita com excelência é uma conquista que reflete nossa dedicação em facilitar o dia a dia e aumentar a produtividade, reduzindo desperdícios.</p>
-                        <p>Essa visão é o que nos motiva a seguir inovando e entregando serviços que transformam vidas e negócios.</p>
-                        <div class="btn-social">
-                            <a href="https://www.instagram.com/rpradosolucoes/profilecard/?igsh=MWVkN2E3NWRjZXBuMA==" target="_blank"><button><i class="bi bi-instagram"></i></button></a>
-                            <a href="https://www.linkedin.com/in/iago-rocha-prado-ba108b343/"_blank" target="_blank"><button><i class="bi bi-linkedin"></i></button></a>
-                            <a href="https://wa.me/5511930050306" target="_blank"><button><i class="bi bi-whatsapp"></i></button></a>
                         </div>
-                    </div><!-- txt-sobre -->
-                </div><!-- Flex -->
-            </div><!-- Interface -->
-        </section><!-- FIM SOBRE MIM -->
-        <section class="portifolio" id="portifolio">
+                    </div>
+                    
+                    <div class="img-topo-site fade-in delay-1">
+                        <img src="images/rb_845.png" alt="Ilustração de documentos e processo de transcrição" width="300" height="auto" loading="eager">
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="especialidades" id="especialidades" aria-labelledby="titulo-servicos">
             <div class="interface">
-                <h2 class="titulo">REFERÊNCIAS DE <span>TRANSCRIÇÃO.</span></h2>
+                <h2 class="titulo fade-in" id="titulo-servicos">NOSSOS <span>SERVIÇOS</span></h2>
                 <div class="flex">
-                    <div class="container">
-                        <div class="flip">
-                            <div class="frente"></div>
-                            <div class="tras"></div>
-                        </div><!--flip-->
-                    </div><!--container-->
-                    <div class="container">
-                        <div class="flip">
-                            <div class="frente2"></div>
-                            <div class="tras2"></div>
-                        </div><!--flip-->
-                    </div><!--container-->
-                    <div class="container">
-                        <div class="flip">
-                            <div class="frente3"></div>
-                            <div class="tras3"></div>
-                        </div><!--flip-->
-                    </div><!--container-->
-                    <!-- <div class="img-port"></div>
-                <div class="img-port"></div>
-                <div class="img-port"></div> -->
-                </div><!-- FIM FLEX -->
-            </div><!-- FIM INTERFACE -->
-        </section><!-- FIM PORTIFOLIO -->
-        <section class="portifolio2">
+                    <article class="especialidades-box fade-in delay-1">
+                        <i class="bi bi-journal-text" aria-hidden="true"></i>
+                        <h3>Transcrição de Documentos</h3>
+                        <p>Conversão precisa de documentos físicos ou digitais em texto editável e organizado. Ideal para Convenções, Regulamentos Internos, atas de reunião e documentos históricos. Garantimos fidelidade ao original e formatação profissional.</p>
+                        <p><strong>Exemplos:</strong> Convenções, Especificações, Regulamentos Internos, Atas de Assembleia</p>
+                        <a href="#formulario" class="btn-saiba-mais">Solicitar serviço</a>
+                    </article>
+                    
+                    <article class="especialidades-box fade-in delay-2">
+                        <i class="bi bi-file-earmark-text" aria-hidden="true"></i>
+                        <h3>Atualização de Convenções</h3>
+                        <p>Serviço especializado na atualização de Convenções, garantindo conformidade com a legislação vigente. Atualizamos cláusulas obsoletas e adaptamos o documento às novas realidades do Condomínio.</p>
+                        <p><strong>Vantagens:</strong> Linguagem precisa, Inclusão ou Exclusão de Cláusulas, organização por tópicos e versão digital para fácil consulta.</p>
+                        <a href="#formulario" class="btn-saiba-mais">Solicitar serviço</a>
+                    </article>
+                    
+                    <article class="especialidades-box fade-in delay-3">
+                        <i class="bi bi-filetype-docx" aria-hidden="true"></i>
+                        <h3>Digitalização de Arquivos</h3>
+                        <p>Transformamos documentos físicos, como papéis, fotos e plantas, em arquivos digitais de alta qualidade. Facilitamos o armazenamento, a organização e o acesso, preservando as informações de forma segura e profissional.</p>
+                        <p><strong>Vantagens:</strong> Arquivos em PDF, JPEG ou TIFF, aparência profissional, fácil navegação e organização digital.</p>
+                        <a href="#formulario" class="btn-saiba-mais">Solicitar serviço</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+        
+        <section class="sobre" id="sobre" aria-labelledby="titulo-sobre">
             <div class="interface">
-                <h2 class="titulo">REFERÊNCIAS DE <span>DIGITALIZAÇÃO DE DOCUMENTOS.</span></h2>
                 <div class="flex">
-                    <div style="height: 630px; width: 100%;">
-                        <embed src="images/Scan2024-12-07_013517.pdf" type="application/pdf" width="100%"
-                            height="100%">
-                    </div><!--container-->
-                </div><!-- FIM FLEX -->
-            </div><!-- FIM INTERFACE -->
-        </section><!-- FIM PORTIFOLIO2 -->
-        <section class="motivos-digitalizacao" id="motivos-digitalizacao">
-    <div class="interface">
-        <h2 class="titulo">POR QUE <span>DIGITALIZAR?</span></h2>
-        <div class="flex">
-            <div class="motivo-box">
-                <i class="bi bi-cloud-arrow-up"></i>
-                <h3>O Judiciário Já É Digital</h3>
-                <p>Com a digitalização completa do judiciário, processos físicos deram lugar aos eletrônicos. Isso significa que a autenticação cartorária não é mais necessária para documentos digitais, tornando o envio e o acesso a informações mais simples e rápidos.</p>
+                    <div class="txt-sobre fade-in">
+                        <h2 class="titulo" id="titulo-sobre">MUITO PRAZER, SOMOS <span>R. PRADO</span></h2>
+                        <p>Somos uma empresa especializada em transcrição e organização documental, com foco em Convenções, Regulamentos Internos e Documentos Corporativos. Nossa equipe possui vasta experiência na Área Administrativa, em Documentos de Condomínios e Tecnologia.</p>
+                        <p>Combinamos precisão técnica com atenção aos detalhes para entregar documentos que realmente atendam às necessidades de nossos clientes.</p>
+                        <p>Nosso diferencial está na capacidade de entender a necessidade dos documentos que transcrevemos, garantindo que tudo seja tratado com a devida atenção. Acreditamos que documentos bem organizados e acessíveis são fundamentais para a boa gestão e conformidade legal.</p>
+                        <p>Além da transcrição fiel, oferecemos serviços de atualização para documentos desatualizados, sempre respeitando a intenção original do texto e atualizando apenas o necessário para adequação à legislação atual.</p>
+                        <div class="btn-social">
+                            <a href="https://www.instagram.com/rpradosolucoes/" target="_blank" rel="noopener" aria-label="Instagram da R. Prado">
+                                <button><i class="bi bi-instagram" aria-hidden="true"></i></button>
+                            </a>
+                            <a href="https://www.linkedin.com/in/iago-rocha-prado-ba108b343/" target="_blank" rel="noopener" aria-label="LinkedIn da R. Prado">
+                                <button><i class="bi bi-linkedin" aria-hidden="true"></i></button>
+                            </a>
+                            <a href="https://wa.me/5511930050306" target="_blank" rel="noopener" aria-label="WhatsApp da R. Prado">
+                                <button><i class="bi bi-whatsapp" aria-hidden="true"></i></button>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="img-sobre fade-in delay-2">
+                        <img src="images/sobre-nos.jpg" alt="Equipe da R. Prado trabalhando em documentos" width="500" height="auto" loading="lazy">
+                    </div>
+                </div>
             </div>
-            <div class="motivo-box">
-                <i class="bi bi-globe"></i>
-                <h3>O Mundo Está Cada Vez Mais Digital</h3>
-                <p>Empresas e serviços estão migrando para o digital, reduzindo o uso de papel e otimizando processos. Estar no ambiente digital é essencial para acompanhar essa transformação e manter a competitividade no mercado.</p>
-            </div>
-            <div class="motivo-box">
-                <i class="bi bi-shield-check"></i>
-                <h3>Segurança e Preservação</h3>
-                <p>Documentos físicos estão sujeitos a deterioração, extravio e danos. A digitalização protege contra esses riscos, garantindo a preservação e segurança das suas informações, além de facilitar backups e acessos remotos.</p>
-            </div>
-            <div class="motivo-box">
-                <i class="bi bi-speedometer2"></i>
-                <h3>Agilidade e Produtividade</h3>
-                <p>Com documentos digitais, buscas são rápidas, compartilhamentos são instantâneos e processos ganham eficiência. Isso economiza tempo e aumenta a produtividade de equipes e negócios.</p>
-            </div>
-            <div class="motivo-box">
-                <i class="bi bi-recycle"></i>
-                <h3>Sustentabilidade</h3>
-                <p>A digitalização reduz o uso de papel, contribuindo para a preservação do meio ambiente. Adotar o digital é um passo importante para construir um futuro mais sustentável.</p>
-            </div>
-        </div><!-- Fim Flex -->
-    </div><!-- Interface -->
-</section><!-- Fim motivos-digitalizacao -->
-        <section class="formulario" id="formulario">
+        </section>
+        
+        <section class="portifolio" id="portifolio" aria-labelledby="titulo-portfolio">
             <div class="interface">
-                <h2 class="titulo">FALE <span>CONOSCO.</span></h2>
-                <form action="https://formspree.io/f/movqzyzb" method="POST">
-                    <input type="text" name="nome" id="nome" placeholder="Seu nome completo" required>
-                    <input type="email" name="email" id="email" placeholder="Seu e-mail" required>
-                    <input type="text" name="telefone" id="telefone" placeholder="Seu celular">
-                    <textarea name="mensagem" id="mensagem" placeholder="Sua mensagem" required></textarea>
-                    <div class="btn-enviar"><input type="submit" value="ENVIAR"></div>
+                <h2 class="titulo fade-in" id="titulo-portfolio">NOSSO <span>PORTFÓLIO</span></h2>
+                <p class="subtitulo-secao fade-in">Confira exemplos de transformações que realizamos em documentos. Deslize o mouse sobre as imagens para ver o antes e depois.</p>
+                
+                <div class="flex portfolio-container">
+                    <div class="container fade-in delay-1">
+                        <div class="portfolio-caption">Convenção de Condomínio</div>
+                        <div class="flip">
+                            <div class="frente" aria-label="Documento antes da transformação - exemplo 1">
+                                <img src="images/Corretos/Antes-01.jpg" alt="Equipe da R. Prado trabalhando em documentos" width="350" height="auto" loading="lazy">
+                            </div>
+                            <div class="tras" aria-label="Documento depois da transformação - exemplo 1">
+                                <img src="images/Corretos/Depois-01.jpg" alt="Equipe da R. Prado trabalhando em documentos" width="350" height="auto" loading="lazy">
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="container fade-in delay-2">
+                        <div class="portfolio-caption">Regulamento Interno</div>
+                        <div class="flip">
+                            <div class="frente frente2" aria-label="Documento antes da transformação - exemplo 2">
+                                <img src="images/Corretos/Antes-04_page-0001.jpg" alt="Equipe da R. Prado trabalhando em documentos" width="350" height="auto" loading="lazy">
+                            </div>
+                            <div class="tras tras2" aria-label="Documento depois da transformação - exemplo 2">
+                                <img src="images/Corretos/Depois-04_page-0001.jpg" alt="Equipe da R. Prado trabalhando em documentos" width="350" height="auto" loading="lazy">
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="container fade-in delay-3">
+                        <div class="portfolio-caption">Convenção de Condomínio</div>
+                        <div class="flip">
+                            <div class="frente frente3" aria-label="Documento antes da transformação - exemplo 3">
+                                <img src="images/Corretos/Antes-02.jpg" alt="Equipe da R. Prado trabalhando em documentos" width="350" height="auto" loading="lazy">
+                            </div>
+                            <div class="tras tras3" aria-label="Documento depois da transformação - exemplo 3">
+                                <img src="images/Corretos/Depois-02.jpg" alt="Equipe da R. Prado trabalhando em documentos" width="350" height="auto" loading="lazy">
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Depoimentos 
+        <section class="depoimentos" id="depoimentos" aria-labelledby="titulo-depoimentos">
+            <div class="interface">
+                <h2 class="titulo fade-in" id="titulo-depoimentos">O QUE NOSSOS <span>CLIENTES DIZEM</span></h2>
+                
+                <div class="depoimentos-slider">
+                    
+                    <div class="depoimento-item fade-in delay-1">
+                        <div class="depoimento-conteudo">
+                            <div class="depoimento-texto">
+                                <i class="bi bi-quote" aria-hidden="true"></i>
+                                <p>A R. Prado transformou nossa convenção de condomínio desatualizada em um documento moderno e de fácil compreensão. O trabalho foi entregue antes do prazo e com qualidade excepcional.</p>
+                            </div>
+                            <div class="depoimento-autor">
+                                <img src="images/user.png" alt="Foto de Carlos Silva" class="depoimento-avatar" width="60" height="60" loading="lazy">
+                                <div class="depoimento-info">
+                                    <h4>Mauro Jr.</h4>
+                                    <p>Síndico - Condomínio Edifício Guaratuba</p>
+                                    <div class="depoimento-estrelas">
+                                        <i class="bi bi-star-fill" aria-hidden="true"></i>
+                                        <i class="bi bi-star-fill" aria-hidden="true"></i>
+                                        <i class="bi bi-star-fill" aria-hidden="true"></i>
+                                        <i class="bi bi-star-fill" aria-hidden="true"></i>
+                                        <i class="bi bi-star-fill" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="depoimento-item fade-in delay-2">
+                        <div class="depoimento-conteudo">
+                            <div class="depoimento-texto">
+                                <i class="bi bi-quote" aria-hidden="true"></i>
+                                <p>Contratamos o serviço de digitalização de arquivos e ficamos impressionados com a organização e qualidade. Agora temos acesso rápido a todos os documentos importantes da empresa.</p>
+                            </div>
+                            <div class="depoimento-autor">
+                                <img src="images/avatar2.jpg" alt="Foto de Ana Oliveira" class="depoimento-avatar" width="60" height="60" loading="lazy">
+                                <div class="depoimento-info">
+                                    <h4>Ana Oliveira</h4>
+                                    <p>Gerente Administrativa - Empresa ABC</p>
+                                    <div class="depoimento-estrelas">
+                                        <i class="bi bi-star-fill" aria-hidden="true"></i>
+                                        <i class="bi bi-star-fill" aria-hidden="true"></i>
+                                        <i class="bi bi-star-fill" aria-hidden="true"></i>
+                                        <i class="bi bi-star-fill" aria-hidden="true"></i>
+                                        <i class="bi bi-star-half" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="depoimento-item fade-in delay-3">
+                        <div class="depoimento-conteudo">
+                            <div class="depoimento-texto">
+                                <i class="bi bi-quote" aria-hidden="true"></i>
+                                <p>A atualização do nosso regulamento interno foi realizada com profissionalismo e atenção aos detalhes. O documento ficou claro, objetivo e em conformidade com a legislação atual.</p>
+                            </div>
+                            <div class="depoimento-autor">
+                                <img src="images/avatar3.jpg" alt="Foto de Roberto Mendes" class="depoimento-avatar" width="60" height="60" loading="lazy">
+                                <div class="depoimento-info">
+                                    <h4>Roberto Mendes</h4>
+                                    <p>Presidente - Associação Residencial Vista Verde</p>
+                                    <div class="depoimento-estrelas">
+                                        <i class="bi bi-star-fill" aria-hidden="true"></i>
+                                        <i class="bi bi-star-fill" aria-hidden="true"></i>
+                                        <i class="bi bi-star-fill" aria-hidden="true"></i>
+                                        <i class="bi bi-star-fill" aria-hidden="true"></i>
+                                        <i class="bi bi-star-fill" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                <div class="depoimentos-controles">
+                    <button class="depoimento-prev" aria-label="Depoimento anterior"><i class="bi bi-chevron-left" aria-hidden="true"></i></button>
+                    <div class="depoimento-dots">
+                        <span class="dot active" aria-label="Depoimento 1"></span>
+                        <span class="dot" aria-label="Depoimento 2"></span>
+                        <span class="dot" aria-label="Depoimento 3"></span>
+                    </div>
+                    <button class="depoimento-next" aria-label="Próximo depoimento"><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
+                </div>
+            </div>
+        </section> -->
+        
+        <section class="motivos-digitalizacao" id="motivos-digitalizacao" aria-labelledby="titulo-motivos">
+            <div class="interface">
+                <h2 class="titulo fade-in" id="titulo-motivos">POR QUE <span>ESCOLHER NOSSOS SERVIÇOS?</span></h2>
+                <div class="flex">
+                    <article class="motivo-box fade-in delay-1">
+                        <i class="bi bi-check-circle" aria-hidden="true"></i>
+                        <h3>Precisão e Confiabilidade</h3>
+                        <p>Garantimos transcrições fiéis aos originais, com revisão minuciosa para evitar erros. Nossos profissionais possuem experiência específica em documentos de Condomínio.</p>
+                    </article>
+                    
+                    <article class="motivo-box fade-in delay-2">
+                        <i class="bi bi-lock" aria-hidden="true"></i>
+                        <h3>Confidencialidade</h3>
+                        <p>Todos os documentos são tratados com absoluta confidencialidade. Assinamos termos de confidencialidade quando necessário e implementamos protocolos rígidos de segurança da informação.</p>
+                    </article>
+                    
+                    <article class="motivo-box fade-in delay-1">
+                        <i class="bi bi-clock-history" aria-hidden="true"></i>
+                        <h3>Atualização Legal</h3>
+                        <p>Identificamos e sugerimos atualizações para cláusulas desatualizadas ou em desconformidade com a legislação atual, sempre preservando a intenção original do documento.</p>
+                    </article>
+                    
+                    <article class="motivo-box fade-in delay-2">
+                        <i class="bi bi-file-earmark-richtext" aria-hidden="true"></i>
+                        <h3>Formatação Profissional</h3>
+                        <p>Documentos entregues com formatação padronizada, estilos consistentes e prontos para impressão ou publicação digital, seguindo normas ABNT ou os padrões do próprio documento.</p>
+                    </article>
+                    
+                    <article class="motivo-box fade-in delay-3">
+                        <i class="bi bi-headset" aria-hidden="true"></i>
+                        <h3>Suporte Personalizado</h3>
+                        <p>Atendimento dedicado para entender suas necessidades específicas. Oferecemos consultoria sobre a melhor forma de organizar e estruturar seus documentos.</p>
+                    </article>
+                    
+                    <article class="motivo-box fade-in delay-3">
+                        <i class="bi bi-lightning-charge" aria-hidden="true"></i>
+                        <h3>Agilidade na Entrega</h3>
+                        <p>Trabalhamos com prazos realistas e cumprimos rigorosamente os cronogramas estabelecidos. Entendemos a importância dos seus documentos e priorizamos a entrega dentro do prazo combinado.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Nova seção de FAQ -->
+        <section class="faq" id="faq" aria-labelledby="titulo-faq">
+            <div class="interface">
+                <h2 class="titulo fade-in" id="titulo-faq">PERGUNTAS <span>FREQUENTES</span></h2>
+                
+                <div class="faq-container fade-in delay-1">
+                    <div class="faq-item">
+                        <button class="faq-pergunta" aria-expanded="false">
+                            Qual o prazo médio para transcrição de documentos?
+                            <i class="bi bi-plus" aria-hidden="true"></i>
+                        </button>
+                        <div class="faq-resposta">
+                            <p>O prazo varia conforme o tamanho e complexidade do documento. Para uma Convenção de Condomínio padrão (20-30 páginas), o prazo médio é de 7 a 9 dias úteis. Para documentos menores, podemos entregar em até 5 dias úteis. Sempre discutimos prazos específicos durante o orçamento inicial.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-pergunta" aria-expanded="false">
+                            Como funciona o processo de atualização de convenções?
+                            <i class="bi bi-plus" aria-hidden="true"></i>
+                        </button>
+                        <div class="faq-resposta">
+                            <p>O processo inclui: 1) Análise do documento atual; 2) Transcrição do documento original; 3) Identificação de cláusulas desatualizadas, inclusão de novas Cláusulas e Capítulos de acordo com a necessidade do cliente; 4) Proposta de alterações; 5) Após aprovação, implementação das mudanças; 6) Revisão final e entrega do documento atualizado em formato digital e impresso, se solicitado. Para a continuidade do processo, pelo cliente, de atualização junto ao Cartório de Registro de Imóveis.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-pergunta" aria-expanded="false">
+                            Quais formatos de arquivo são entregues após a digitalização?
+                            <i class="bi bi-plus" aria-hidden="true"></i>
+                        </button>
+                        <div class="faq-resposta">
+                            <p>Entregamos os arquivos digitalizados em PDF pesquisável como padrão. Para imagens e plantas, oferecemos formatos JPEG ou PNG em alta resolução. Todos os arquivos são organizados em pastas lógicas e podem ser entregues em mídia física ou via download seguro.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-pergunta" aria-expanded="false">
+                            Como é garantida a confidencialidade dos documentos?
+                            <i class="bi bi-plus" aria-hidden="true"></i>
+                        </button>
+                        <div class="faq-resposta">
+                            <p>Todos os nossos colaboradores assinam termos de confidencialidade. Utilizamos sistemas seguros para armazenamento temporário dos documentos e, após a conclusão do serviço, removemos os arquivos de nossos sistemas, mantendo apenas o necessário para suporte futuro (mediante autorização). Também oferecemos a assinatura de NDA (Acordo de Não Divulgação) específico para cada cliente, se desejado.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-pergunta" aria-expanded="false">
+                            É possível solicitar alterações após a entrega do trabalho?
+                            <i class="bi bi-plus" aria-hidden="true"></i>
+                        </button>
+                        <div class="faq-resposta">
+                            <p>Sim, oferecemos um período de 15 dias para solicitação de ajustes sem custo adicional, desde que não envolvam mudanças substanciais no escopo original do trabalho. Nosso objetivo é sua total satisfação com o resultado final.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Calculadora de Orçamentos -->
+        <section class="calculadora" id="calculadora" aria-labelledby="titulo-calculadora">
+            <div class="interface">
+                <h2 class="titulo fade-in" id="titulo-calculadora">CALCULADORA DE <span>ORÇAMENTO</span></h2>
+                <p class="subtitulo-secao fade-in">Faça uma estimativa rápida do valor do seu projeto. Para um orçamento detalhado, entre em contato conosco.</p>
+                
+                <div class="calculadora-container fade-in delay-1">
+                    <div class="calculadora-form">
+                        <div class="form-group">
+                            <label for="tipo-servico">Tipo de Serviço:</label>
+                            <select id="tipo-servico" name="tipo-servico">
+                                <option value="transcricao">Transcrição de Documentos</option>
+                                <option value="atualizacao">Atualização de Convenções</option>
+                                <option value="digitalizacao">Digitalização de Arquivos</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="qtd-paginas">Quantidade de Páginas:</label>
+                            <input type="number" id="qtd-paginas" name="qtd-paginas" min="1" value="10">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="urgencia">Nível de Urgência:</label>
+                            <select id="urgencia" name="urgencia">
+                                <!-- As opções serão preenchidas dinamicamente pelo JavaScript -->
+                            </select>
+                        </div>
+                        
+                        <button type="button" id="calcular-orcamento" class="btn-calcular">Calcular Estimativa</button>
+                    </div>
+                    
+                    <div class="calculadora-resultado">
+                        <div class="resultado-box">
+                            <h3>Estimativa de Valor:</h3>
+                            <p class="valor-estimado">R$ 0,00</p>
+                            <p class="prazo-estimado">Prazo estimado: <span>10-12 dias úteis</span></p>
+                            <p class="obs-estimativa">Esta é apenas uma estimativa. Para um orçamento preciso, entre em contato conosco.</p>
+                            <p class="obs-estimativa">Importante: Para os serviços de Digitalização de Documentos e Pastas de Prestação de Contas, não haverá um prazo definido.
+                            Para receber um prazo real e personalizado, preencha o formulário abaixo. Assim, nossa equipe poderá analisar sua demanda com precisão e enviar uma proposta adequada.</p>
+                            <a href="#formulario" class="btn-solicitar-orcamento">Solicitar orçamento detalhado</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="formulario" id="formulario" aria-labelledby="titulo-orcamento">
+            <div class="interface">
+                <h2 class="titulo fade-in" id="titulo-orcamento">SOLICITE UM <span>ORÇAMENTO</span></h2>
+                <p class="subtitulo-secao fade-in">Preencha o formulário abaixo e entraremos em contato em até 24 horas úteis.</p>
+                
+                <form action="https://formspree.io/f/movqzyzb" method="POST" class="fade-in delay-1">
+                    <div class="form-group">
+                        <label for="nome">Nome completo</label>
+                        <input type="text" name="nome" id="nome" placeholder="Seu nome completo" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" name="email" id="email" placeholder="Seu e-mail" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="telefone">Telefone</label>
+                        <input type="text" name="telefone" id="telefone" placeholder="Seu celular">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="tipo-servico-form">Tipo de serviço</label>
+                        <select name="tipo-servico" id="tipo-servico-form">
+                            <option value="">Selecione o tipo de serviço</option>
+                            <option value="transcricao">Transcrição de Documentos</option>
+                            <option value="atualizacao">Atualização de Convenções</option>
+                            <option value="digitalizacao">Digitalização de Arquivos</option>
+                            <option value="outro">Outro (especificar na mensagem)</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="mensagem">Mensagem</label>
+                        <textarea name="mensagem" id="mensagem" placeholder="Descreva seu projeto (tipo de documento, quantidade de páginas, prazos, etc.)" required></textarea>
+                    </div>
+                    
+                    <div class="form-group form-checkbox">
+                        <input type="checkbox" name="politica-privacidade" id="politica-privacidade" required>
+                        <label for="politica-privacidade">Concordo com a <a href="#" class="link-politica">Política de Privacidade</a></label>
+                    </div>
+                    
+                    <div class="btn-enviar">
+                        <input type="submit" value="ENVIAR" aria-label="Enviar formulário">
+                    </div>
                 </form>
-            </div><!-- interface -->
-        </section><!-- formulário -->
+            </div>
+        </section>
     </main>
+    
     <footer>
         <div class="interface">
-            <div class="line-footer">
-                <div class="flex">
-                    <div class="logo-footer" id="logo-footer">
-                        <img src="images/Logo_R._Prado.png" alt="" width="150">
-                    </div><!-- logo-footer -->
+            <div class="footer-content">
+                <div class="footer-col">
+                    <div class="logo-footer">
+                        <img src="images/Logo_R._Prado.png" alt="Logo R. Prado" width="150" height="auto" loading="lazy">
+                    </div>
+                    <p class="footer-descricao">Soluções administrativas especializadas em transcrição e digitalização de documentos, com foco em qualidade e confidencialidade.</p>
                     <div class="btn-social">
-                        <a href="https://www.instagram.com/rpradosolucoes/profilecard/?igsh=MWVkN2E3NWRjZXBuMA==" target="_blank"><button><i class="bi bi-instagram"></i></button></a>
-                        <a href="https://www.linkedin.com/in/iago-rocha-prado-ba108b343/" target="_blank"><button><i class="bi bi-linkedin"></i></button></a>
-                        <a href="https://wa.me/5511930050306" target="_blank"><button><i class="bi bi-whatsapp"></i></button></a>
-                    </div><!--btn-social-->
-                </div><!--flex-->
-            </div><!-- line-footer -->
-            <div class="line-footer borda">
-                <p><i class="bi bi-envelope"></i> <a
-                        href="mailto:rpradosolucoesadm@gmail.com" target="_blank">rpradosolucoesadm@gmail.com</a></p>
-            </div><!-- line-footer -->
-        </div><!-- interface -->
-    </footer><!-- rodape -->
+                        <a href="https://www.instagram.com/rpradosolucoes/" target="_blank" rel="noopener" aria-label="Instagram da R. Prado">
+                            <button><i class="bi bi-instagram" aria-hidden="true"></i></button>
+                        </a>
+                        <a href="https://www.linkedin.com/in/iago-rocha-prado-ba108b343/" target="_blank" rel="noopener" aria-label="LinkedIn da R. Prado">
+                            <button><i class="bi bi-linkedin" aria-hidden="true"></i></button>
+                        </a>
+                        <a href="https://wa.me/5511930050306" target="_blank" rel="noopener" aria-label="WhatsApp da R. Prado">
+                            <button><i class="bi bi-whatsapp" aria-hidden="true"></i></button>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Links Rápidos</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Início</a></li>
+                        <li><a href="#especialidades">Serviços</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#portifolio">Referências</a></li>
+                        <li><a href="#depoimentos">Depoimentos</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#formulario">Contato</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Contato</h3>
+                    <ul class="footer-contato">
+                        <li>
+                            <i class="bi bi-envelope" aria-hidden="true"></i>
+                            <a href="mailto:rpradosolucoesadm@gmail.com">rpradosolucoesadm@gmail.com</a>
+                        </li>
+                        <li>
+                            <i class="bi bi-whatsapp" aria-hidden="true"></i>
+                            <a href="https://wa.me/5511930050306">(11) 93005-0306</a>
+                        </li>
+                        <li>
+                            <i class="bi bi-clock" aria-hidden="true"></i>
+                            <span>Seg - Sex: 18h às 6h</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom borda">
+                <p>&copy; 2023-<span id="ano-atual">2024</span> R. Prado Soluções Administrativas. Todos os direitos reservados.</p>
+                <p><a href="#">Política de Privacidade</a> | <a href="#">Termos de Uso</a></p>
+            </div>
+        </div>
+    </footer>
+    
+    <a href="https://wa.me/5511930050306" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Contato via WhatsApp">
+        <i class="bi bi-whatsapp" aria-hidden="true"></i>
+    </a>
+    
+    <script src="js/script.js" defer></script>
+
+    <!-- Modal de Política de Privacidade -->
+    <div id="modal-politica" class="modal-politica" aria-hidden="true" aria-labelledby="titulo-modal-politica">
+        <div class="modal-conteudo">
+            <div class="modal-cabecalho">
+                <h2 id="titulo-modal-politica">Política de Privacidade</h2>
+                <button class="fechar-modal" aria-label="Fechar política de privacidade">&times;</button>
+            </div>
+            <div class="modal-corpo">
+                <h3>1. Informações Coletadas</h3>
+                <p>Na R. Prado Soluções Administrativas, coletamos informações quando você preenche nosso formulário de contato, incluindo nome, e-mail, telefone e detalhes sobre seu projeto. Também coletamos dados automaticamente através de cookies, como endereço IP e comportamento de navegação.</p>
+                
+                <h3>2. Uso das Informações</h3>
+                <p>Utilizamos suas informações para:</p>
+                <ul>
+                    <li>Responder a solicitações de orçamento e contato</li>
+                    <li>Melhorar nossos serviços e experiência do usuário</li>
+                    <li>Enviar comunicações relevantes sobre nossos serviços</li>
+                    <li>Cumprir obrigações legais e regulatórias</li>
+                </ul>
+                
+                <h3>3. Compartilhamento de Dados</h3>
+                <p>Não compartilhamos seus dados pessoais com terceiros, exceto quando necessário para prestação de serviços (ex: plataforma de e-mail) ou por exigência legal. Utilizamos o Formspree para processar formulários, que segue rigorosos padrões de segurança.</p>
+                
+                <h3>4. Cookies e Tecnologias Similares</h3>
+                <p>Nosso site utiliza cookies para análise de tráfego e personalização. Você pode gerenciar suas preferências de cookies através das configurações do navegador.</p>
+                
+                <h3>5. Segurança de Dados</h3>
+                <p>Implementamos medidas técnicas e organizacionais para proteger seus dados contra acesso não autorizado e situações acidentais ou ilícitas de destruição, perda, alteração ou difusão.</p>
+                
+                <h3>6. Alterações na Política</h3>
+                <p>Esta política pode ser atualizada periodicamente. A versão mais recente estará sempre disponível em nosso site, com data de revisão visível.</p>
+                
+                <h3>7. Contato</h3>
+                <p>Para dúvidas sobre privacidade, entre em contato pelo e-mail: <a href="mailto:rpradosolucoesadm@gmail.com">rpradosolucoesadm@gmail.com</a>.</p>
+                
+                <p><em>Última atualização: <span id="data-politica"></span></em></p>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
