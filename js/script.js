@@ -161,7 +161,7 @@ const urgenciaSelect = document.getElementById('urgencia');
 // Definir opções de urgência para cada tipo de serviço
 const urgenciaPorServico = {
     transcricao: [
-        { value: 'normal', text: 'Normal (10-12 dias úteis)', multiplicador: 1, prazo: '10-12 dias úteis' },
+        { value: 'normal', text: 'Normal (9-12 dias úteis)', multiplicador: 1, prazo: '9-12 dias úteis' },
         { value: 'rapido', text: 'Rápido (5-8 dias úteis)', multiplicador: 1.3, prazo: '5-8 dias úteis' },
         { value: 'urgente', text: 'Urgente (3-4 dias úteis)', multiplicador: 1.6, prazo: '3-4 dias úteis' }
     ],
@@ -174,6 +174,11 @@ const urgenciaPorServico = {
         { value: 'normal', text: 'Normal (Prazo a definir)', multiplicador: 1, prazo: 'Prazo a definir conforme volume' },
         { value: 'rapido', text: 'Rápido (Prazo a definir)', multiplicador: 1.2, prazo: 'Prazo a definir conforme volume' }
         // Digitalização não tem opção urgente
+    ],
+    digitalizacaoLA: [
+        { value: 'normal', text: 'Normal (9-12 dias úteis)', multiplicador: 1, prazo: 'Normal (9-12 dias úteis)' },
+        { value: 'rapido', text: 'Rápido (5-8 dias úteis)', multiplicador: 1.3, prazo: 'Rápido (5-8 dias úteis)' },
+        { value: 'urgente', text: 'Urgente (3-4 dias úteis)', multiplicador: 1.6, prazo: 'Urgente (3-4 dias úteis)' }
     ]
 };
 
@@ -221,6 +226,9 @@ if (calcularBtn) {
                 break;
             case 'digitalizacao':
                 valorBase = 0.18;
+                break;
+            case 'digitalizacaoLA':
+                valorBase = 2;
                 break;
             default:
                 valorBase = 15;
