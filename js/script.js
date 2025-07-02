@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    menuLinks.forEach(link => {
+    menuLinks.forEach(link => { 
         link.addEventListener('click', () => {
             fecharMenu();
         });
@@ -228,7 +228,7 @@ if (calcularBtn) {
                 valorBase = 0.18;
                 break;
             case 'digitalizacaoLA':
-                valorBase = 2;
+                valorBase = 1.9;
                 break;
             default:
                 valorBase = 15;
